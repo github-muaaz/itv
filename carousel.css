@@ -1,0 +1,87 @@
+.custom-carousel{
+    background-color: red;
+    position: relative;
+}
+
+.custom-carousel .items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+    gap: 2px;
+    background-color: yellow;
+}
+
+.custom-carousel .items::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-carousel .item{
+    flex-basis: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.item-1{
+    background-image: url(./assets/images/banner.jpeg);
+}
+.item-2{
+    background-image: url(./assets/images/banner.jpeg);
+}
+.item-3{
+    background-image: url(./assets/images/banner.jpeg);
+}
+
+.controls{
+    position: absolute;
+    top: 85%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 900;
+
+}
+
+.controls a{
+    height: 8px;
+    width: 8px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.controls .central-btn{
+    color: #52B038;
+   display: flex;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #52B038;
+    background-color: transparent;
+}
+
+
+/* @keyframes toNext {
+    0{
+
+    }
+    100%{
+
+    }
+    
+} */
+
+
+
+/* .carousel .item-cover{
+    background-color: yellow;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+} */
