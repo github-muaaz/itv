@@ -1,6 +1,6 @@
 .custom-carousel{
-    background-color: red;
     position: relative;
+    background-color: transparent;
 }
 
 .custom-carousel .items{
@@ -9,7 +9,6 @@
     flex-wrap: nowrap;
     overflow: auto;
     gap: 2px;
-    background-color: yellow;
 }
 
 .custom-carousel .items::-webkit-scrollbar {
@@ -38,7 +37,7 @@
 .controls{
     position: absolute;
     top: 85%;
-    right: 10%;
+    right: 13%;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -65,23 +64,3 @@
     border: solid 2px #52B038;
     background-color: transparent;
 }
-
-
-/* @keyframes toNext {
-    0{
-
-    }
-    100%{
-
-    }
-    
-} */
-
-
-
-/* .carousel .item-cover{
-    background-color: yellow;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
-} */
