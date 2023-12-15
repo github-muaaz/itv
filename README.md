@@ -2,6 +2,9 @@
 
 course hometask itv.com webpage with responsive style
 
+https://itv-muaaz.netlify.app
+
+
 <img width="1536" alt="Screenshot 2023-12-06 at 11 25 41" src="https://github.com/github-muaaz/itv/assets/152799823/18cd6cc4-1b9c-46e9-a8ae-64e7bea344b8">
 <img width="1536" alt="Screenshot 2023-12-06 at 11 26 01" src="https://github.com/github-muaaz/itv/assets/152799823/7255f515-63db-498f-912f-3157fef23d17">
 <img width="1536" alt="Screenshot 2023-12-06 at 11 27 24" src="https://github.com/github-muaaz/itv/assets/152799823/9862b789-753c-40db-a00b-75165db5631a">
