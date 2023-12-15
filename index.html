@@ -21,6 +21,7 @@
         integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
     <script>
         $(document).ready(function () {
 
@@ -109,6 +110,36 @@
         });
     </script>
 
+
+    <script>
+        var open1 = false;
+        var open2 = false;
+
+        function toggle(index) {
+            if (index === 1) {
+                if (open1 === false) {
+                    document.getElementById('collapse-1').style.height = 'fit-content';
+                    document.getElementById('btn-1').style.transform = 'rotate(270deg)';
+                    open1 = true;
+                } else {
+                    document.getElementById('btn-1').style.transform = 'rotate(90deg)';
+                    document.getElementById('collapse-1').style.height = '0';
+                    open1 = false;
+                }
+            }
+            else {
+                if (open2 === false) {
+                    document.getElementById('btn-2').style.transform = 'rotate(270deg)';
+                    document.getElementById('collapse-2').style.height = 'fit-content';
+                    open2 = true;
+                } else {
+                    document.getElementById('btn-2').style.transform = 'rotate(90deg)';
+                    document.getElementById('collapse-2').style.height = '0';
+                    open2 = false;
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -120,7 +151,7 @@
                     <button class="menu-icon">
                         <img src="./assets/icons/menu.svg" alt="menu icon">
                     </button>
-                    <img src="./assets/icons/itv-logo.svg" alt="logo">
+                    <img class="logo" src="./assets/icons/itv-logo.svg" alt="logo">
 
                     <a href="#">Televidiniye</a>
                     <a href="#">Videoklub</a>
@@ -788,18 +819,50 @@
 
                 <div class="lists">
                     <div class="list-1 ul-list">
-                        <h3>Biz haqimizda</h3>
-                        <ul>
+                        <div class="flex justify-between" onclick="toggle(1)">
+                            <h3>Biz haqimizda</h3>
+
+                            <img id="btn-1" class="collapse-list" src="./assets/icons/right.svg" alt="icon">
+                        </div>
+                        
+                        <ul id="collapse-1">
+                            <li><a href="#">Kontaktlar</a></li>
+                            <li><a href="#">Qo'llab-quvvatlash</a></li>
+                            <li><a href="#">Obunalar</a></li>
+                            <li><a href="#">Hamkorlar</a></li>
+                        </ul>
+
+                        <ul id="collapse-1-1">
                             <li><a href="#">Kontaktlar</a></li>
                             <li><a href="#">Qo'llab-quvvatlash</a></li>
                             <li><a href="#">Obunalar</a></li>
                             <li><a href="#">Hamkorlar</a></li>
                         </ul>
                     </div>
-
+                    
                     <div class="list-2 ul-list">
-                        <h3>Katalog</h3>
-                        <ul class="catalog">
+                        <div class="flex justify-between" onclick="toggle(2)">
+                            <h3>Katalog</h3>
+
+                            <img id="btn-2" class="collapse-list" src="./assets/icons/right.svg" alt="icon">
+                        </div>
+
+                        <ul id="collapse-2" class="catalog">
+                            <a href="#">TV</a>
+                            <a href="#">Filmlar</a>
+                            <a href="#">Seriallar</a>
+                            <a href="#">Multifilmlar</a>
+                            <a href="#">Anime</a>
+                            <a href="#">UZ Video</a>
+                            <a href="#">Radio</a>
+                            <a href="#">Jonli efir</a>
+                            <a href="#">Muslim</a>
+                            <a href="#">Video darslar</a>
+                            <a href="#">Axborotlar</a>
+                            <a href="#">Sport</a>
+                        </ul>
+
+                        <ul id="collapse-2-2" class="catalog">
                             <a href="#">TV</a>
                             <a href="#">Filmlar</a>
                             <a href="#">Seriallar</a>
@@ -868,9 +931,9 @@
                         <button>English</button>
                     </div>
 
-                        <a class="bottom-a" href="#">Ommaviy offerta</a>
-                        
-                        <a class="bottom-b" href="#">Maxfiylik siyosati</a>
+                    <a class="bottom-a" href="#">Ommaviy offerta</a>
+
+                    <a class="bottom-b" href="#">Maxfiylik siyosati</a>
                 </div>
             </div>
         </footer>

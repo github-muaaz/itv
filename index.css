@@ -30,6 +30,11 @@ button {
     background-position: center;
 }
 
+.justify-between{
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 
@@ -491,13 +496,28 @@ li {
     margin-bottom: 15px;
 }
 
+#collapse-1, #collapse-2{
+    height: fit-content;
+}
+
+.collapse-list{
+    display: none;
+}
+
 .catalog {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-flow: column;
     gap: 10px 20px;
+}
 
+#collapse-1-1, #collapse-2-2{
+    display: grid;
+}
+
+#collapse-1, #collapse-2{
+    display: none;
 }
 
 
@@ -777,7 +797,7 @@ hr {
 
 @media screen and (max-width: 600px) {
     .cover {
-        width: 570px;
+        width: 100%;
     }
 
     .menu-icon {
@@ -804,6 +824,23 @@ hr {
         display: none;
     }
 
+    .nav-right, .nav-left{
+        gap: 10px !important;
+    }
+
+    .nav-right img, .nav-left .menu-icon img{
+        width: 15px;
+    }
+    
+    .nav-right button{
+        font-size: 13px;
+    }
+
+    .logo{
+        width: 50px;
+    }
+
+
     .title-img {
         width: 300px;
         margin-bottom: 10px;
@@ -818,13 +855,17 @@ hr {
 
 
     .big {
-        width: 258px;
-        height: 258px;
+        /* width: 258px; */
+        width: 100%;
+        height: 100%;
+        /* height: 258px; */
     }
 
     .small {
-        width: 123px;
-        height: 123px;
+        /* width: 123px; */
+        width: 100%;
+        /* height: 123px; */
+        height: 100%;
     }
 
     .channel-grid-1,
@@ -852,9 +893,10 @@ hr {
 
     .lists {
         grid-template-areas:
-            'one two two'
-            'three three three'
-            'four four .';
+            'one'
+            'two'
+            'three'
+            'four';
         gap: 20px 140px;
     }
 
@@ -883,5 +925,25 @@ hr {
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+
+    .collapse-list{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        transform: rotate(90deg);
+        transition: all 0.5s linear ease-in-out !important;
+    }
+
+    #collapse-1-1, #collapse-2-2{
+        display: none;
+    }
+
+    #collapse-1, #collapse-2{
+        display: grid;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s linear ease-in-out !important;
     }
 }
