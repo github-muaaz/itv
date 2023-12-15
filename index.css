@@ -883,7 +883,7 @@ hr {
     }
 
     .card-overlay p {
-        font-size: 13px;
+        font-size: 13px !important;
     }
 
     .ul-list h3 {
