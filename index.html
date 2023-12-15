@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Itv muaaz</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
         integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
@@ -139,13 +139,20 @@
                 }
             }
         }
+
+        window.onscroll = function () {
+            if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100)
+                document.getElementById('navbar').style.backgroundColor = 'rgb(29, 31, 30)';
+            else
+                document.getElementById('navbar').style.backgroundColor = 'transparent';
+        }
     </script>
 </head>
 
 <body>
     <div class="main-layout">
 
-        <header>
+        <header id="navbar">
             <nav class="cover">
                 <div class="nav-left">
                     <button class="menu-icon">
@@ -509,9 +516,9 @@
                                 <img src="./assets/icons/play.svg" alt="play icon">
 
                                 <p> <small>
-                                    2023, AQSH, Yaponiya <br>
-                                    Jangari, Sarguzashtlar, ...
-                                </small>
+                                        2023, AQSH, Yaponiya <br>
+                                        Jangari, Sarguzashtlar, ...
+                                    </small>
                                 </p>
                             </div>
                         </div>
@@ -895,7 +902,7 @@
 
                             <img id="btn-1" class="collapse-list" src="./assets/icons/right.svg" alt="icon">
                         </div>
-                        
+
                         <ul id="collapse-1">
                             <li><a href="#">Kontaktlar</a></li>
                             <li><a href="#">Qo'llab-quvvatlash</a></li>
@@ -910,7 +917,7 @@
                             <li><a href="#">Hamkorlar</a></li>
                         </ul>
                     </div>
-                    
+
                     <div class="list-2 ul-list">
                         <div class="flex justify-between" onclick="toggle(2)">
                             <h3>Katalog</h3>

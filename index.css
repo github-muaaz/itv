@@ -4,7 +4,6 @@
     font-family: SFPro;
     box-sizing: border-box;
     color: #fff;
-
 }
 
 @font-face {
@@ -63,7 +62,6 @@ button {
 /* header */
 
 header {
-    padding: 15px 0;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -76,6 +74,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0;
 }
 
 nav .nav-left {
